@@ -45,8 +45,7 @@ jobs:
           aws eks update-kubeconfig --region us-east-1 --name sockShop
           kubectl config set-context --current --namespace=sock-shop     
 
-      - name: Apply manifest files
-        run: kubectl apply -f manifest/.
+
 
       - name: Update helm charts
         run: helm repo update   
@@ -57,3 +56,5 @@ jobs:
           helm upgrade --install prometheus prometheus/kube-prometheus-stack
           helm upgrade --install ingress ingress-nginx/ingress-nginx
 
+      - name: Apply manifest files
+        run: kubectl apply -f manifest/.
