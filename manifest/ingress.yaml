@@ -31,7 +31,7 @@ spec:
                 port:
                   number: 80
 
-   - host: prometheus.kahmanny.pro
+    - host: prometheus.kahmanny.pro
       http:
         paths:
           - pathType: Prefix
@@ -44,7 +44,7 @@ spec:
 
   tls:
     - hosts:
-      - sock.kahmanny.pro
-       - grafana.kahmanny.pro
-       - prometheus.kahmanny.pro
+        - sock.kahmanny.pro
+        - grafana.kahmanny.pro
+        - prometheus.kahmanny.pro
       secretName: king-secret
