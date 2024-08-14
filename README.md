@@ -21,3 +21,4 @@ The necessary EKS configuration files were obtained from the provided GitHub rep
 An ingress controller was deployed to manage external access to the services within the Kubernetes cluster. This was done using Helm, a package manager for Kubernetes.
 The ingress controller was responsible for creating a load balancer that would route traffic to the appropriate services within the cluster.
 <img width="1119" alt="Screenshot 2024-08-04 at 12 18 00 AM" src="https://github.com/user-attachments/assets/a6d482b5-c5c1-403e-b730-8dbc35daffe4">
+<img width="1192" alt="Screenshot 2024-08-04 at 12 30 07 AM" src="https://github.com/user-attachments/assets/b6496d95-5b23-4da0-bfe9-fbbb8f324ffb">
