@@ -60,7 +60,7 @@ jobs:
         run: |
           
           helm upgrade --install prometheus prometheus/kube-prometheus-stack
-          helm upgrade --install ingress ingress-nginx/ingress-nginx
+          helm upgrade --install ingress ingress/ingress-nginx
 
       - name: Apply manifest files
         run: kubectl apply -f manifest/.
