@@ -4,6 +4,7 @@ Project Overview:
 This project involved deploying a microservices-based application, specifically the Socks Shop, on Kubernetes using Infrastructure as Code. The goal was to automate and streamline a deployment process, ensuring it was both efficient and secure.
 
 Execution Steps:
+
 1. I create a cluster on AWS using EKS terraform modules.
 The first step was 1 set up an Amazon EKS cluster using Terraform, an iaac tool. Terraform modules specific to EKS were utilized to provision the cluster efficiently.
 This involved defining the necessary resources such as nodes, networking configurations, and other cluster-related settings in Terraform configuration files.
@@ -45,3 +46,4 @@ This ensured that the application was accessible over HTTPS, enhancing security.
 A CI/CD pipeline was implemented using GitHub Actions which is part of this repository, with two separate workflows:
 The first workflow was responsible for creating the infrastructure and namespaces.
 The second workflow handled the remaining deployment processes, including the deployment of applications, monitoring tools, and certificates. Deployment of both branches/workflow were successful
+<img width="1200" alt="Screenshot 2024-08-14 at 12 38 59 PM" src="https://github.com/user-attachments/assets/c602a187-e2cd-4634-afb1-c328e9da9dcd">
