@@ -43,20 +43,22 @@ jobs:
       - name: Update kubeconfig   
         run: |
           aws eks update-kubeconfig --region us-east-1 --name sockShop
-          kubectl config set-context --current --namespace=sock-shop     
+          kubectl config set-context --current --namespace=sock-shop 
+          kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.5.3/cert-manager.crds.yaml
+          kubectl apply -f https://github.com/cert-manager/releases/download/v1.15.1/cert-manager.yaml    
 
       - name: Add helm charts
         run: |
           helm repo add ingress https://kubernetes.github.io/ingress-nginx
           helm repo add prometheus http://prometheus-community.github.io/helm-charts
-          helm repo add jetstack https://charts.jetstack.io
+          
 
       - name: Update helm charts
         run: helm repo update   
 
       - name: Install helm charts
         run: |
-          helm upgrade --install certificate jetstack/cert-manager
+          
           helm upgrade --install prometheus prometheus/kube-prometheus-stack
           helm upgrade --install ingress ingress-nginx/ingress-nginx
 
