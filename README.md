@@ -9,6 +9,7 @@ Execution Steps:
 The first step was 1 set up an Amazon EKS cluster using Terraform, an iaac tool. Terraform modules specific to EKS were utilized to provision the cluster efficiently.
 This involved defining the necessary resources such as nodes, networking configurations, and other cluster-related settings in Terraform configuration files.
 <img width="1196" alt="Screenshot 2024-08-03 at 2 55 13 PM" src="https://github.com/user-attachments/assets/9ba83c1d-cd79-4200-9159-3e0063b640f6">
+<img width="1123" alt="Screenshot 2024-08-02 at 2 47 09 PM" src="https://github.com/user-attachments/assets/b606c543-7f23-48a2-a2dd-83d68d72c4ca">
 
 
 2. Creating a VPC for the cluster.
