@@ -17,3 +17,6 @@ This ensured the Kubernetes cluster had a secure and scalable network environmen
 3. i retrieve EKS configuration files from the provided git repo.
 The necessary EKS configuration files were obtained from the provided GitHub repository. These files contained predefined settings and templates needed for deploying the Socks Shop application. (file.yaml) in the manifest directory.
 
+4. i created an Ingress controller using Helm
+An ingress controller was deployed to manage external access to the services within the Kubernetes cluster. This was done using Helm, a package manager for Kubernetes.
+The ingress controller was responsible for creating a load balancer that would route traffic to the appropriate services within the cluster.
